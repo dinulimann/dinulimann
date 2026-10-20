@@ -13,11 +13,14 @@ Full-stack developer, backend-focused, who loves data. I build systems that move
 
 | Project | What it does | Result |
 |---|---|---|
+| [**Data Engineering Portfolio**](https://github.com/dinulimann/dataen) | Three pipelines with CI: batch ELT (Airflow, dbt), streaming (Kafka, Spark), lakehouse (Delta Lake), Airflow as control plane | 50+ tests, [dbt docs online](https://dinulimann.github.io/dataen/) |
 | [**AI Document Extractor**](https://github.com/dinulimann/ai-document-extractor) | Invoice PDFs → validated data in PostgreSQL with a **local** LLM, review UI, CSV export, API | 60/60 fields and 20/20 line items correct on the test set |
 | [**n8n AI Ticket Triage**](https://github.com/dinulimann/n8n-ai-ticket-triage) | n8n workflow: classify support messages with a local LLM, draft replies, store tickets, alert Slack/Discord | 11/12 categories right, all urgent tickets escalated |
 | [**PostgreSQL Payroll Optimization**](https://github.com/dinulimann/postgres-payroll-optimization) | Case study rebuilding a real payroll bottleneck with synthetic data | 28 s → 0.2 s (140x), identical results |
 | [**Price Tracker**](https://github.com/dinulimann/price-tracker) | Async scraper → PostgreSQL price history → change alerts → Streamlit dashboard | 1,000 products in ~60 s, 0 failures |
 | [**Naver SmartStore Scraper**](https://github.com/dinulimann/naver-smartstore-scraper) | REST API for product data with a stealth headless browser, proxy & fingerprint rotation, caching | Swappable scraping backend via env var |
+| [**GoBack**](https://github.com/dinulimann/goback) | Full-stack e-commerce: Go (Gin, GORM) API, React admin and storefront, Midtrans payments | JWT auth, coupons, sales analytics |
+| [**Botto**](https://github.com/dinulimann/botto) | Chat with your own PDF/Word/TXT files: RAG with ChromaDB (local embeddings) and Groq Llama 3.1 | Streaming answers |
 | [**CV Quest**](https://github.com/dinulimann/gamee) | My CV as a browser RPG: walk around a village, collect skill gems, run SQL in a secret terminal | Bilingual (ID/EN), playable on mobile |
 
 ### 🛠️ Stack
