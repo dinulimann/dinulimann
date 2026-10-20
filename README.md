@@ -21,6 +21,7 @@ Full-stack developer, backend-focused, who loves data. I build systems that move
 | [**Leave Management API**](https://github.com/dinulimann/leave-management-api) | Laravel REST API for employee leave: working days, balance reservation, manager approval, row locking | 20 tests on SQLite + PostgreSQL in CI |
 | [**Price Tracker**](https://github.com/dinulimann/price-tracker) | Async scraper → PostgreSQL price history → change alerts → Streamlit dashboard | 1,000 products in ~60 s, 0 failures |
 | [**Naver SmartStore Scraper**](https://github.com/dinulimann/naver-smartstore-scraper) | REST API for product data with a stealth headless browser, proxy & fingerprint rotation, caching | Swappable scraping backend via env var |
+| [**Payment Webhooks in Go**](https://github.com/dinulimann/payment-webhooks-go) | Midtrans checkout that survives forged, duplicate, out-of-order and lost webhooks, with reconciliation and a gateway simulator | 6 failure scenarios checked end to end in CI |
 | [**GoBack**](https://github.com/dinulimann/goback) | Full-stack e-commerce: Go (Gin, GORM) API, React admin and storefront, Midtrans payments | JWT auth, coupons, sales analytics |
 | [**Botto**](https://github.com/dinulimann/botto) | Chat with your own PDF/Word/TXT files: RAG with ChromaDB (local embeddings) and Groq Llama 3.1 | Streaming answers |
 | [**CV Quest**](https://github.com/dinulimann/gamee) | My CV as a browser RPG: walk around a village, collect skill gems, run SQL in a secret terminal | Bilingual (ID/EN), playable on mobile |
