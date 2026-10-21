@@ -155,13 +155,6 @@ Ask PostgreSQL in plain Indonesian or English. A local LLM writes the SQL, and a
   <img src="https://img.shields.io/badge/JasperReports-1B6AC6?style=flat-square" alt="JasperReports" />
 </p>
 
-### 🧪 How I work
-
-- **Prove it works.** Every project has tests and CI, and most compare their output against a known answer, not "looks right".
-- **Break it on purpose.** Crashes, retries, duplicates, bad input and outages are part of the demo, not an afterthought.
-- **Report honestly.** Real numbers, measured on real hardware, with the limits written down.
-- **Hand over cleanly.** A README that lets you run, change and own the code without me.
-
 ### 📈 GitHub stats
 
 <p align="center">
