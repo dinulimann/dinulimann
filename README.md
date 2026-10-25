@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=190&section=header&text=Dinul%20Iman&fontColor=ffffff&fontSize=56&fontAlignY=36&desc=Full-stack%20developer%20%C2%B7%20backend-focused%20%C2%B7%20loves%20data&descAlignY=58&descSize=18&animation=fadeIn" width="100%" alt="Dinul Iman" />
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&duration=3200&pause=900&color=2C9FBF&center=true&vCenter=true&width=640&lines=Payroll+engine+for+~5%2C000+employees;Data+pipelines+that+survive+crashes+and+retries;20M+events+in+ClickHouse%2C+verified+against+ground+truth;Local+LLMs+that+turn+PDFs+into+clean+data;Every+number+tested.+Every+limit+written+down." alt="Typing intro" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&duration=3200&pause=900&color=2C9FBF&center=true&vCenter=true&width=640&lines=Payroll+engine+for+~5%2C000+employees;Data+pipelines+that+survive+crashes+and+retries;20M+events+in+ClickHouse%2C+verified+against+ground+truth;Local+LLMs+that+turn+PDFs+into+clean+data;A+forecast+model+monitored+and+retrained+for+a+year;Every+number+tested.+Every+limit+written+down." alt="Typing intro" /></a>
 
 [![CV Quest](https://img.shields.io/badge/Play_my_CV-CV_Quest-7B61FF?style=for-the-badge&logo=gamedeveloper&logoColor=white)](https://gamee-tau.vercel.app/)
 [![Upwork](https://img.shields.io/badge/Hire_me-Upwork-14A800?style=for-the-badge&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~01fbe013db83d42e34)
@@ -17,7 +17,7 @@ I build systems that move and process data reliably: payroll engines, data pipel
 
 - 💼 **Programmer at PT Solusi Integrasi Utama**, on a payroll system for ~5,000 employees (PHP/CodeIgniter, PostgreSQL, Oracle, JasperServer)
 - ⚡ Cut that payroll run from **>10 minutes to <1 minute** by rewriting its stored procedures
-- 🤝 **Open to freelance work:** data pipelines, analytics dashboards, Excel/report automation, web scraping, PostgreSQL performance, AI integration and n8n automation
+- 🤝 **Open to freelance work:** data pipelines, analytics dashboards, Excel/report automation, web scraping, PostgreSQL performance, AWS/Terraform, ML in production, AI integration (RAG, document extraction) and n8n automation
 - 🎮 My CV is also a game: walk around a pixel village in [**CV Quest**](https://gamee-tau.vercel.app/)
 
 ### ⭐ Highlights
@@ -59,12 +59,24 @@ Freshness, volume, drift, schema and reconciliation checks on a dbt warehouse of
 Ask PostgreSQL in plain Indonesian or English. A local LLM writes the SQL, and an SQL guard plus a read-only role keep it safe. <b>20/24</b> on an accuracy eval, and <b>6/6</b> attack attempts refused.
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/dinulimann/mlops-forecast-serving"><img src="https://raw.githubusercontent.com/dinulimann/mlops-forecast-serving/main/docs/accuracy.png" alt="Forecast accuracy over a replayed year" /></a>
+<h4><a href="https://github.com/dinulimann/mlops-forecast-serving">MLOps · a forecast model in production</a></h4>
+LightGBM behind FastAPI with an MLflow registry, monitored for data quality, drift, accuracy and bias, and retrained behind a gate. A replayed year: retrained models <b>4–6% more accurate</b> per product, and a prices-in-cents incident caught <b>the same day</b>. Where it lost to the frozen model is reported too.
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/dinulimann/rag-regulations"><img src="https://raw.githubusercontent.com/dinulimann/rag-regulations/main/docs/chat.png" alt="RAG answer citing regulation articles" /></a>
+<h4><a href="https://github.com/dinulimann/rag-regulations">RAG on Government Regulations</a></h4>
+Answers about Indonesian regulations (PP 35/2021, PP 36/2021 and amendments), always citing the article. Hybrid search with pgvector and full-text, local LLM. On a 30-question eval: <b>25/25</b> facts right, <b>5/5</b> out-of-scope questions refused, no invented citations.
+</td>
+</tr>
 </table>
 
 ### 📂 All projects
 
 <details>
-<summary><b>🛠️ Data engineering</b> (6)</summary>
+<summary><b>🛠️ Data engineering</b> (8)</summary>
 <br>
 
 | Project | What it does | Result |
@@ -73,18 +85,21 @@ Ask PostgreSQL in plain Indonesian or English. A local LLM writes the SQL, and a
 | [**Event Analytics**](https://github.com/dinulimann/event-analytics) | Collector API → ClickHouse → Grafana | 20M events verified, 14k events/s exactly-once |
 | [**Quake Warehouse**](https://github.com/dinulimann/quake-warehouse) | Incremental ELT from the live USGS API with dbt on DuckDB (BigQuery-ready) | 23 data tests per build, 3 real-data bugs found and covered |
 | [**Data Quality Monitor**](https://github.com/dinulimann/data-quality-monitor) | Checks, alerts on change and an HTML report for a dbt warehouse | 8 incidents caught, 0 false failures in 76 days |
+| [**API → Warehouse**](https://github.com/dinulimann/api-to-warehouse) | Incremental dlt loads from a paginated, rate-limited API plus real ECB rates, modelled with dbt | Checked against ground truth, 28 dbt tests, 3 real bugs fixed |
+| [**Serverless AWS Pipeline**](https://github.com/dinulimann/aws-terraform-pipeline) | S3 → Lambda validation → partitioned lake, quarantine, DynamoDB, SQS DLQ, EventBridge report; all Terraform | 29 tests on LocalStack, least-privilege IAM checked |
 | [**Data Engineering Portfolio**](https://github.com/dinulimann/dataen) | Batch ELT (Airflow, dbt), streaming (Kafka, Spark), lakehouse (Delta Lake) | 50+ tests, [dbt docs online](https://dinulimann.github.io/dataen/) |
 | [**Excel Report Automation**](https://github.com/dinulimann/excel-report-automation) | Messy branch spreadsheets → validated PostgreSQL → Excel + PDF report by email | 6 file layouts; each branch gets back its rejected rows |
 
 </details>
 
 <details>
-<summary><b>📊 Analytics & data science</b> (4)</summary>
+<summary><b>📊 Analytics, ML & MLOps</b> (5)</summary>
 <br>
 
 | Project | What it does | Result |
 |---|---|---|
 | [**Demand Forecasting**](https://github.com/dinulimann/demand-forecasting) | LightGBM vs baselines on 12,196 real Walmart series, Streamlit dashboard | −30% error on the hidden test period |
+| [**MLOps Forecast Serving**](https://github.com/dinulimann/mlops-forecast-serving) | Model API, MLflow registry, drift/accuracy/bias monitoring, gated retraining, Grafana | A year replayed; incident caught the same day |
 | [**A/B Testing**](https://github.com/dinulimann/ab-testing) | A real 90k-player experiment analysed properly, plus simulations of peeking, power and CUPED | Found a sample ratio mismatch most analyses miss |
 | [**Retail Analytics**](https://github.com/dinulimann/retail-analytics) | 1M transactions: cleaning, cohorts, RFM, basket analysis, Metabase | 25% of customers = 70% of revenue |
 | [**ML Notebooks**](https://github.com/dinulimann/ml-notebooks) | Earlier experiments: LSTM forecasting, sentiment, seq2seq, PySpark analysis | Honest notes on what didn't work |
@@ -92,12 +107,13 @@ Ask PostgreSQL in plain Indonesian or English. A local LLM writes the SQL, and a
 </details>
 
 <details>
-<summary><b>🤖 AI & automation</b> (4)</summary>
+<summary><b>🤖 AI & automation</b> (5)</summary>
 <br>
 
 | Project | What it does | Result |
 |---|---|---|
 | [**AI Document Extractor**](https://github.com/dinulimann/ai-document-extractor) | Invoice PDFs → PostgreSQL with a local LLM, review UI, API | 60/60 fields, 20/20 line items |
+| [**RAG on Regulations**](https://github.com/dinulimann/rag-regulations) | Q&A over Indonesian regulations with article citations, pgvector + full-text, local LLM | 25/25 facts, 5/5 refusals, 0 invented citations |
 | [**Text-to-SQL Agent**](https://github.com/dinulimann/text-to-sql-agent) | Plain-language questions → safe, read-only SQL → table and chart | 20/24 accuracy, 6/6 attacks refused |
 | [**n8n AI Ticket Triage**](https://github.com/dinulimann/n8n-ai-ticket-triage) | Classify support messages, draft replies, alert Slack/Discord | 11/12 categories right, all urgent tickets escalated |
 | [**Botto**](https://github.com/dinulimann/botto) | Chat with your own documents: RAG with ChromaDB and Llama 3.1 | Streaming answers |
@@ -136,6 +152,7 @@ Ask PostgreSQL in plain Indonesian or English. A local LLM writes the SQL, and a
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,go,php,laravel,nodejs,ts,nestjs,fastapi&perline=8" alt="Languages and backend" /><br>
   <img src="https://skillicons.dev/icons?i=postgres,mysql,kafka,grafana,docker,git,githubactions,linux&perline=8" alt="Data and tools" /><br>
+  <img src="https://skillicons.dev/icons?i=aws,terraform,prometheus&perline=8" alt="Cloud and infrastructure" /><br>
   <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,prisma,js,html,css&perline=8" alt="Frontend" />
 </p>
 
@@ -149,6 +166,10 @@ Ask PostgreSQL in plain Indonesian or English. A local LLM writes the SQL, and a
   <img src="https://img.shields.io/badge/Debezium-91D443?style=flat-square" alt="Debezium" />
   <img src="https://img.shields.io/badge/Metabase-509EE3?style=flat-square&logo=metabase&logoColor=white" alt="Metabase" />
   <img src="https://img.shields.io/badge/LightGBM-02569B?style=flat-square" alt="LightGBM" />
+  <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" alt="MLflow" />
+  <img src="https://img.shields.io/badge/pgvector-336791?style=flat-square" alt="pgvector" />
+  <img src="https://img.shields.io/badge/dlt-59C1D5?style=flat-square" alt="dlt" />
+  <img src="https://img.shields.io/badge/LocalStack-4D29B4?style=flat-square" alt="LocalStack" />
   <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white" alt="Ollama" />
   <img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white" alt="n8n" />
   <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright" />
