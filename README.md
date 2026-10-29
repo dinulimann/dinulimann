@@ -15,7 +15,7 @@
 
 I build systems that move and process data reliably: payroll engines, data pipelines, analytics platforms, scrapers and AI-powered automations.
 
-- 💼 **Programmer at PT Solusi Integrasi Utama**, on a payroll system for ~5,000 employees (PHP/CodeIgniter, PostgreSQL, Oracle, JasperServer)
+- 💼 **Programmer at PT Solusi Integrasi Utama**, on a payroll system for ~3,000 employees (PHP/CodeIgniter, PostgreSQL, Oracle, JasperServer)
 - ⚡ Cut that payroll run from **>10 minutes to <1 minute** by rewriting its stored procedures
 - 🤝 **Open to freelance work:** data pipelines, analytics dashboards, Excel/report automation, web scraping, PostgreSQL performance, AWS/Terraform, ML in production, AI integration (RAG, document extraction) and n8n automation
 - 🎮 My CV is also a game: walk around a pixel village in [**CV Quest**](https://gamee-tau.vercel.app/)
